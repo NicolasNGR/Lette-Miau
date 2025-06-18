@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lette e Miau - Café, Livros e Carinho Felino</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <img src="/public/image.png" alt="Lette e Miau Logo" class="logo-img">
+            </a>
+            <nav class="nav-desktop">
+                <a href="#hero" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#differentials" class="nav-link">Diferenciais</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#contact" class="btn-cta">Agendar Visita</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </button>
+        </div>
+        <nav class="nav-mobile" id="mobileNav">
+            <a href="#hero" class="nav-link-mobile">Início</a>
+            <a href="#about" class="nav-link-mobile">Sobre</a>
+            <a href="#services" class="nav-link-mobile">Serviços</a>
+            <a href="#differentials" class="nav-link-mobile">Diferenciais</a>
+            <a href="#testimonials" class="nav-link-mobile">Depoimentos</a>
+            <a href="#contact" class="nav-link-mobile">Contato</a>
+            <a href="#contact" class="btn-cta">Agendar Visita</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Café, Livros e <span class="highlight">Carinho Felino</span></h1>
+                    <p class="hero-description">Um lugar aconchegante onde a literatura encontra a paixão por gatos e o
+                        aroma de um bom café.</p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn-primary">Nossos Serviços <i
+                                class="fas fa-arrow-right arrow"></i></a>
+                        <a href="#contact" class="btn-secondary">Fale Conosco</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="hero-icons">
+                            <span class="icon-main"><i class="fas fa-cat"></i></span>
+                            <span class="icon-coffee"><i class="fas fa-mug-hot"></i></span>
+                            <span class="icon-book"><i class="fas fa-book"></i></span>
+                        </div>
+                        <div class="hero-card-content">
+                            <h3>Viva a Experiência</h3>
+                            <p>Desfrute de um ambiente único, perfeito para relaxar e se conectar com nossos amigos
+                                felinos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p class="section-description">Conheça a essência da Lette e Miau: um refúgio para amantes de gatos
+                        e boa leitura.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fas fa-paw"></i></span>
+                        <h3>Amor Felino</h3>
+                        <p>Nossos gatos são resgatados e socializados, prontos para receber e dar carinho.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fas fa-book-open"></i></span>
+                        <h3>Cultura e Leitura</h3>
+                        <p>Uma vasta biblioteca com títulos variados para todos os gostos e idades.</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fas fa-coffee"></i></span>
+                        <h3>Café de Qualidade</h3>
+                        <p>Grãos selecionados e métodos de preparo que garantem uma experiência deliciosa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="section-description">Além de carinho felino, oferecemos uma variedade de opções para seu
+                        conforto e diversão.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-icon"><i class="fas fa-ticket-alt"></i></span>
+                        <h3>Sessão de Acariciar Gatos</h3>
+                        <p>Reserve um tempo para interagir e brincar com nossos gatos em um ambiente tranquilo.</p>
+                        <p class="service-price">A partir de R$ 30/hora</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon"><i class="fas fa-wifi"></i></span>
+                        <h3>Espaço de Co-working</h3>
+                        <p>Trabalhe ou estude em um ambiente inspirador, com wi-fi de alta velocidade e muitos miados.
+                        </p>
+                        <p class="service-price">A partir de R$ 25/hora</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon"><i class="fas fa-birthday-cake"></i></span>
+                        <h3>Eventos e Festas</h3>
+                        <p>Celebre seu aniversário ou evento especial com a companhia dos nossos adoráveis felinos.</p>
+                        <p class="service-price">Consulte pacotes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="differentials" class="differentials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Diferenciais</h2>
+                    <p class="section-description">
+                        O que nos torna únicos e especiais no coração de todos que nos visitam.
+                    </p>
+                </div>
+
+                <div class="differentials-content">
+                    <div class="differentials-list">
+                        <div class="differential-item">
+                            <div class="differential-icon"><i class="fas fa-paw"></i></div>
+                            <div class="differential-text">
+                                <h3>Gatos Resgatados da Rua</h3>
+                                <p>Todos os nossos felinos são resgatados, tratados e socializados com muito amor. Cada
+                                    um
+                                    tem sua história de superação.</p>
+                            </div>
+                        </div>
+
+                        <div class="differential-item">
+                            <div class="differential-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="differential-text">
+                                <h3>Livros Garimpados de Sebos</h3>
+                                <p>Nossa biblioteca é formada por tesouros literários encontrados em sebos, dando nova
+                                    vida
+                                    a grandes obras.</p>
+                            </div>
+                        </div>
+
+                        <div class="differential-item">
+                            <div class="differential-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="differential-text">
+                                <h3>Impacto Social Positivo</h3>
+                                <p>Cada visita contribui para o resgate e cuidado de mais felinos, além de promover a
+                                    cultura literária.</p>
+                            </div>
+                        </div>
+
+                        <div class="differential-item">
+                            <div class="differential-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="differential-text">
+                                <h3>Ambiente Terapêutico</h3>
+                                <p>A companhia dos gatos oferece benefícios terapêuticos comprovados, reduzindo stress e
+                                    ansiedade.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="differentials-highlight">
+                        <div class="highlight-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Mais que um Negócio</h3>
+                        <p>Somos um movimento de transformação social através do amor pelos animais e pela cultura.</p>
+                        <div class="highlight-stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Gatos já adotados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+                    <p class="section-description">Histórias reais de quem já se encantou com a Lette e Miau.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Um lugar mágico! O café é delicioso e os gatos são super
+                            carinhosos. Mal posso esperar para voltar!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J.S</div>
+                            <div class="author-info">
+                                <h4>João Silva</h4>
+                                <p>Visitante Frequente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Ambiente perfeito para trabalhar e relaxar. A conexão com os gatos
+                            é terapêutica."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A.L</div>
+                            <div class="author-info">
+                                <h4>Ana Luiza</h4>
+                                <p>Co-worker</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Minha filha amou a festa de aniversário com os gatinhos! Uma
+                            experiência única e inesquecível."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M.R</div>
+                            <div class="author-info">
+                                <h4>Mariana Ribeiro</h4>
+                                <p>Mãe e Cliente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fale Conosco</h2>
+                    <p class="section-description">Entre em contato para agendar sua visita, tirar dúvidas ou saber
+                        mais!</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <div class="contact-details">
+                                <h4>Nosso Endereço</h4>
+                                <p>Rua dos Gatos, 123 - Bairro Feliz, Cidade dos Sonhos - SP</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <div class="contact-details">
+                                <h4>Telefone</h4>
+                                <p>(11) 98765-4321</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>contato@letteemiau.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="hours">
+                            <h4>Horário de Funcionamento</h4>
+                            <ul class="hours-list">
+                                <li class="hours-item"><span>Segunda - Sexta:</span> <span>10:00 - 20:00</span></li>
+                                <li class="hours-item"><span>Sábado:</span> <span>10:00 - 18:00</span></li>
+                                <li class="hours-item"><span>Domingo:</span> <span>Fechado</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="social-media">
+                            <h4>Siga-nos nas Redes Sociais</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i>
+                                    Facebook</a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i>
+                                    Instagram</a>
+                                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i>
+                                    Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Envie uma Mensagem</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="visita">Agendamento de Visita</option>
+                                    <option value="evento">Organização de Evento</option>
+                                    <option value="duvida">Dúvida Geral</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Sua Mensagem</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar Mensagem <i
+                                    class="fas fa-paper-plane arrow"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="/public/image-footer.png" alt="Lette e Miau Logo" class="footer-logo-img">
+                <p class="footer-description">Seu refúgio de paz com café, livros e os mais adoráveis felinos.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#services">Nossos Serviços</a></li>
+                    <li><a href="#differentials">Diferenciais</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Rua dos Gatos, 123</li>
+                    <li>(11) 98765-4321</li>
+                    <li>contato@letteemiau.com.br</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Lette e Miau. Todos os direitos reservados.</p>
+            <p>Desenvolvido com <i class="fas fa-heart"></i> por Nicolas Gomes, Júlia Nunes e Raul Rodrigues</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
