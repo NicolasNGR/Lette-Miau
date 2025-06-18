@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const allNavLinks = document.querySelectorAll('a[href^="#"]');
-    const header = document.querySelector('.header'); 
+    const header = document.querySelector('.header');
 
     allNavLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetSection = document.querySelector(targetId);
 
             if (targetSection) {
-                const headerHeight = header ? header.offsetHeight : 0; 
+                const headerHeight = header ? header.offsetHeight : 0;
                 const targetPosition = targetSection.offsetTop - headerHeight;
 
                 window.scrollTo({
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (!formIsValid) {
                 alert('Por favor, preencha todos os campos obrigatórios corretamente.');
-                return; 
+                return;
             }
 
             const submitBtn = this.querySelector('.btn-submit');
@@ -78,17 +78,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
             setTimeout(() => {
                 submitBtn.innerHTML = 'Mensagem Enviada! ✅';
-                submitBtn.style.backgroundColor = '#4CAF50'; 
+                submitBtn.style.backgroundColor = '#4CAF50';
 
                 setTimeout(() => {
-                    this.reset(); 
-                    submitBtn.innerHTML = originalText; 
-                    submitBtn.disabled = false; 
-                    submitBtn.style.backgroundColor = '#532800'; 
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.backgroundColor = '#532800';
 
                     alert('Obrigado pela sua mensagem! Entraremos em contato em breve. 🐱');
                 }, 2000);
-            }, 1500); 
+            }, 1500);
         });
     }
 
@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerElement = document.querySelector('.header');
 
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) { 
+        if (window.scrollY > 50) {
             headerElement.style.backgroundColor = 'rgba(255, 251, 234, 0.95)';
-            headerElement.style.backdropFilter = 'blur(5px)'; 
+            headerElement.style.backdropFilter = 'blur(5px)';
         } else {
             headerElement.style.backgroundColor = '#fffbea';
             headerElement.style.backdropFilter = 'none';
@@ -158,17 +158,15 @@ document.addEventListener('DOMContentLoaded', function () {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
-                entry.target.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out'; 
-                observer.unobserve(entry.target); 
+                entry.target.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' }); 
+    }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
 
     animateOnScrollElements.forEach(el => {
-        el.style.opacity = '0'; 
+        el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
         basicObserver.observe(el);
     });
-
-    console.log('🐱 Lette e Miau website loaded successfully (simplified JS)!');
 });
